@@ -7,28 +7,28 @@
 
     <header class="nav">
       <div class="logo">KST</div>
-      <nav class="nav-links">
+      <!-- <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-      </nav>
+      </nav> -->
       <a class="ghost-btn" href="/cv.pdf" download>Download CV</a>
     </header>
 
     <main>
       <section class="hero" id="home" data-reveal>
         <div class="hero-content">
-          <p class="eyebrow">Web Developer · 6 Years Experience</p>
+          <p class="eyebrow">Front-end Developer · 6 Years Experience</p>
           <h1>
             KYI SIN THANT
             <span>Building elegant, high-performance web experiences.</span>
           </h1>
           <p class="lead">
-            Experienced and dedicated developer with 6+ years of hands-on
-            experience building high-quality web applications. I specialize in
-            front-end and full-stack development with Vue, React, and ASP.NET,
-            delivering intuitive UI and robust backend systems.
+            Senior developer with over 6 years of experience delivering
+            high-quality web applications. I focus on front-end excellence,
+            intuitive UI/UX, and designing scalable, well-structured APIs that
+            support long-term growth.
           </p>
           <div class="hero-actions">
             <a class="primary-btn" href="#contact">Let’s Work Together</a>
@@ -55,7 +55,7 @@
             <ul>
               <li>Vue + Nuxt ecosystems</li>
               <li>React + Next platforms</li>
-              <li>Node + ASP.NET backends</li>
+              <li>Node backends</li>
             </ul>
           </div>
           <div class="floating-card card-two" data-reveal>
@@ -67,7 +67,9 @@
           </div>
           <div class="floating-card card-three" data-reveal>
             <p class="card-title">Currently</p>
-            <p class="card-body">Open to new collaborations and ambitious builds.</p>
+            <p class="card-body">
+              Open to new collaborations and ambitious builds.
+            </p>
           </div>
         </div>
       </section>
@@ -81,17 +83,18 @@
           <div class="about-card" data-reveal>
             <h3>Profile</h3>
             <p>
-              Experienced and dedicated developer with 6+ years of hands-on
-              experience in building high-quality web applications. I specialize in
-              both front-end and full-stack development, focusing on intuitive user
-              interfaces and robust backend systems.
+              Senior developer with over 6 years of experience delivering
+              high-quality web applications. I focus on front-end excellence,
+              intuitive UI/UX, and designing scalable, well-structured APIs that
+              support long-term growth.
             </p>
           </div>
           <div class="about-card" data-reveal>
             <h3>Approach</h3>
             <p>
-              I balance visual polish with performance. Clean architecture, reusable
-              components, and scalable patterns are at the heart of every build.
+              I balance visual polish with performance. Clean architecture,
+              reusable components, and scalable patterns are at the heart of
+              every build.
             </p>
           </div>
           <div class="about-card" data-reveal>
@@ -175,8 +178,8 @@
           <div>
             <h2>Let’s build something beautiful.</h2>
             <p>
-              Available for freelance, full-time, or contract work. Tell me about
-              your idea and I’ll help make it real.
+              Available for freelance, full-time, or contract work. Tell me
+              about your idea and I’ll help make it real.
             </p>
           </div>
           <div class="cta-actions">
@@ -189,8 +192,7 @@
 
     <footer class="footer">
       <div>
-        <strong>KYI SIN THANT</strong>
-        <span>Web Developer · Vue · React · TypeScript</span>
+        <span>Front-End Developer · Vue · React · TypeScript</span>
       </div>
       <div class="footer-links">
         <a :href="`mailto:${email}`">{{ email }}</a>
@@ -235,10 +237,12 @@ onMounted(() => {
         }
       }
     },
-    { threshold: 0.2 }
+    { threshold: 0.2 },
   );
 
-  document.querySelectorAll("[data-reveal]").forEach((el) => observer?.observe(el));
+  document
+    .querySelectorAll("[data-reveal]")
+    .forEach((el) => observer?.observe(el));
   window.addEventListener("mousemove", handleMouseMove);
 });
 
@@ -252,7 +256,6 @@ const email = "kyisinthant.kst97@gmail.com";
 const skills = [
   "Vue",
   "React",
-  "ASP.NET",
   "Node",
   "TypeScript",
   "Tailwind",
@@ -308,7 +311,7 @@ const projects = [
     title: "Human Resource Management System",
     tag: "Vue + ASP.NET",
     description:
-      "Responsive UI for HR tasks such as employee data, payroll, and work hours, backed by secure real-time services.",
+      "Built responsive UI for HR tasks like employee data, payroll, and work hours, plus secure backend services for real-time data.",
     stack: ["Vue.js", "Vuetify", "ASP.NET", "SQL Server"],
   },
   {
