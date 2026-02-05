@@ -13,9 +13,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav> -->
-      <a class="ghost-btn" href="/Kyi Sin Thant Resume.pdf" download
-        >Download Resume</a
-      >
+      <a class="ghost-btn" href="/resume.pdf" download>Download Resume</a>
     </header>
 
     <main>
@@ -186,9 +184,7 @@
           </div>
           <div class="cta-actions">
             <a class="primary-btn" :href="`mailto:${email}`">Email Me</a>
-            <a class="ghost-btn" href="/Kyi Sin Thant Resume.pdf" download
-              >Download Resume</a
-            >
+            <a class="ghost-btn" href="/resume.pdf" download>Download Resume</a>
           </div>
         </div>
       </section>
